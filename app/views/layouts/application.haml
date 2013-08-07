@@ -1,0 +1,20 @@
+!!!
+%html
+  %head
+    %title Twitter
+    = stylesheet_link_tag    "bootstrap", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "bootstrap", "data-turbolinks-track" => true
+    = csrf_meta_tags
+  %body.container
+	
+		.navbar
+			.navbar-inner
+				%a.brand{:href => "#"} Title
+				%ul.nav
+					%li.active
+						%a{:href => "#"} Home
+					%li
+						%a{:href => "#"} Link
+					%li
+						%a{:href => "#"} Link
+    = yield
